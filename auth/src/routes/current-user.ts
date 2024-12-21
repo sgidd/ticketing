@@ -1,8 +1,5 @@
 import express from "express";
-import jwt from "jsonwebtoken";
-
-import { currentUser } from "../middlewares/current-user";
-import { requireAuth } from "../middlewares/rquire-auth";
+import { currentUser } from "@sgidd-tickets/common";
 
 const router = express.Router();
 
