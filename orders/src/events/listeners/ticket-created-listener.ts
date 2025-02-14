@@ -5,7 +5,7 @@ import { Ticket } from "../../models/ticket";
 import { queueGroupName } from "./queue-group-name";
 
 export class TicketCreatedListener extends Listener<TicketCreatedEvent> {
-  subject: Subjects.TicketedCreated = Subjects.TicketedCreated;
+  subject: Subjects.TicketCreated = Subjects.TicketCreated;
   //   queueGroupName = "orders-service"; //whenever multiple instances of orders service running quegroupname makes sure only one of them receives the same event
   //it should same for one service across all listeners so adding const in one file and using throught orders service
   queueGroupName = queueGroupName;
